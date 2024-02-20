@@ -8,3 +8,4 @@ Silakan gunakan format berikut:<br>
 
 Berikut adalah daftar Volunter yang diterima:
 * lorem, ipsum.lorem.id](https://loremipsum.id).
+* Jacky, Jacky.jacky.id(https://jackychen.id).
