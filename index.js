@@ -55,3 +55,10 @@ const getImg = (shows) => {
     }
   }
 };
+
+// Tambah object
+
+const Jacky = new PersonMember();
+Jacky.firstName = "jacky";
+Jacky.Lastname = "jacky";
+Jacky.Hello("JACKY");
