@@ -28,3 +28,30 @@ const Getjokes = async () => {
 };
 
 console.log(Getjokes()); //utk liat data didalam api yg kita panggil
+
+// Request API MovieList
+const form = document.querySelector("#search-form");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  document.querySelectorAll("img").forEach((img) => img.remove());
+  const keyword = form.elements.query.value;
+  const Config = {
+    params: {
+      q: keyword,
+    },
+  };
+  const res = await axios.get("http://api.tvmaze.com/search/shows?q=naruto", Config);
+  getImg(res.data);
+  form.elements.query.value = "";
+});
+
+const getImg = (shows) => {
+  for (let result of shows) {
+    if (result.show.image) {
+      const img = document.createElement("img");
+      img.src = result.show.image.medium;
+      document.body.append(img);
+    }
+  }
+};
