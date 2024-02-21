@@ -1,3 +1,4 @@
+// Tambah Data
 const Tambah = (a) => {
   for (let i = a; i <= 200; i++) {
     if (i % 2 === 0 && i % 4 === 0) {
@@ -7,4 +8,4 @@ const Tambah = (a) => {
     }
   }
 };
-console.log(Tambah(20));
+console.log(Tambah(200));
