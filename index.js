@@ -55,3 +55,27 @@ const getImg = (shows) => {
     }
   }
 };
+
+
+// Tambah object
+const Jc = new PersonMember();
+Jacky.firstName = "jacky";
+Jacky.Lastname = "jacky";
+Jacky.Hello("JACKY");
+
+// Object 2
+
+class User {
+  constructor(name) {
+    this._name = name;
+  }
+
+  static anonymous() {
+    console.log("anonymous");
+  }
+}
+
+const kedar = new User("kedar");
+kedar.anonymous(); // error
+User.anonymous(); // "anonymous"
+
