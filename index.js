@@ -56,8 +56,9 @@ const getImg = (shows) => {
   }
 };
 
+
 // Tambah object
-const Jacky = new PersonMember();
+const Jc = new PersonMember();
 Jacky.firstName = "jacky";
 Jacky.Lastname = "jacky";
 Jacky.Hello("JACKY");
@@ -77,3 +78,4 @@ class User {
 const kedar = new User("kedar");
 kedar.anonymous(); // error
 User.anonymous(); // "anonymous"
+
